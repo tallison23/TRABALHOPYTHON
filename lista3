@@ -1,1 +1,8 @@
-# TRABALHOPYTHON
+primeiro_termo = 2
+razao = 3
+ultimo_termo = 100
+
+quantidade_termos = (ultimo_termo - primeiro_termo) // razao + 1
+soma = (primeiro_termo + ultimo_termo) * quantidade_termos // 2
+
+print("A soma dos elementos da P.A. é:", soma)
