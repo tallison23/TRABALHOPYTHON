@@ -1,1 +1,16 @@
+# solicita a quantidade de alunos
+quantidade_alunos = int(input("Digite a quantidade de alunos: "))
 
+# cria a lista de notas
+notas = []
+
+# preenche a lista com as notas dos alunos
+for i in range(quantidade_alunos):
+    nota = float(input("Digite a nota do aluno {}: ".format(i+1)))
+    notas.append(nota)
+
+# calcula a média da turma
+media = sum(notas) / len(notas)
+
+# exibe o resultado na tela
+print("A média da turma é:", media)
