@@ -1,0 +1,17 @@
+# cria a matriz 3x3
+matriz = [[0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]]
+
+# preenche a matriz com os valores informados pelo usuário
+for i in range(3):
+    for j in range(3):
+        matriz[i][j] = int(input("Digite o valor para a posição [{},{}]: ".format(i, j)))
+
+# calcula a soma da diagonal principal
+soma = 0
+for i in range(3):
+    soma += matriz[i][i]
+
+# exibe o resultado na tela
+print("A soma da diagonal principal da matriz é:", soma)
