@@ -1,1 +1,14 @@
+angulo = float(input("Digite um ângulo em graus: "))
 
+# Convertendo o ângulo para radianos
+angulo_radianos = angulo * 3.14159 / 180
+
+# Determinando o quadrante
+if angulo_radianos >= 0 and angulo_radianos < 1.5708:
+    print("O ângulo está no primeiro quadrante.")
+elif angulo_radianos >= 1.5708 and angulo_radianos < 3.14159:
+    print("O ângulo está no segundo quadrante.")
+elif angulo_radianos >= 3.14159 and angulo_radianos < 4.71239:
+    print("O ângulo está no terceiro quadrante.")
+else:
+    print("O ângulo está no quarto quadrante.")
